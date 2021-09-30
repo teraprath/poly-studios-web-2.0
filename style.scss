@@ -93,6 +93,10 @@ header {
                 font-size: 14px;
                 font-weight: $font-weight-semi-bold;
             }
+
+            .active {
+                color: $color-font-3;
+            }
         }
     }
 }

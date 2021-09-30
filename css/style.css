@@ -93,6 +93,10 @@ header nav ul a {
   font-weight: 600;
 }
 
+header nav ul .active {
+  color: #919191;
+}
+
 .sticky-header {
   background-color: #131313;
 }
