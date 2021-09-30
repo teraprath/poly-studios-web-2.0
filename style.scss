@@ -8,7 +8,7 @@ $color-font-2: #CCCCCC;
 $color-font-3: #919191;
 $color-font-4: #808080;
 
-$font-size-title-1: 48;
+$font-size-title-1: 48px;
 $font-size-title-2: 24px;
 
 $font-weight-light: 300;
@@ -45,6 +45,7 @@ header {
     justify-content: space-between;
     padding: 0 100px;
     user-select: none;
+    transition: all 120ms;
 
     .logo {
         font-size: 28px;
@@ -83,6 +84,10 @@ header {
     }
 }
 
+.sticky-header {
+    background-color: $color-dark-grey;
+}
+
 #home {
 
     .home-container {
@@ -117,11 +122,6 @@ header {
             }
         }
     
-        #typewriter {
-            color: $color-primary;
-            font-weight: $font-weight-bold;
-        }
-    
         #typer {
             color: $color-font-1;
             font-weight: $font-weight-regular;
@@ -141,6 +141,7 @@ header {
         font-size: 48px;
         font-weight: $font-weight-bold;
         color: $color-font-1;
+        padding-top: 100px;
     }
 
     h4 {

@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poly Studios is a small indie game studio founded by students who have always dreamed of making their own game. Games like Envolic came from this studio and more projects are being realized based on community requests.">
 
-    <title>Poly Studios - An Indie Game Studio by Students</title>
+    <title>Poly Studios</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#bf1e61">
+    <meta name="msapplication-TileColor" content="#1a1a1a">
+    <meta name="theme-color" content="#1a1a1a">
 
     <link rel="stylesheet" href="css/min/style.min.css">
 
@@ -16,7 +25,7 @@
     <script src="https://kit.fontawesome.com/a0a804109e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <p class="logo"><a href="#"><b>POLY</b>STUDIOS</a></p>
         <nav>
             <ul>
@@ -24,7 +33,7 @@
                 <li><a href="#team">TEAM</a></li>
                 <li><a href="#games">GAMES</a></li>
                 <li><a href="#devlog">DEVLOG</a></li>
-                <div><a href="#discord">DISCORD</a></div>
+                <div><a href="http://dc.poly-studios.com" target="_blank">DISCORD</a></div>
             </ul>
         </nav>
     </header>
@@ -33,7 +42,9 @@
         <div class="home-container">
             <img src="assets/img/Logo.svg" alt="Logo" class="logo">
             <div class="headline-container">
-                <h1>WE ARE <span id="typewriter">POLY.</span><span id="typer">|</span></h1>
+                <h1>WE ARE
+                    <span class="typer" id="main" data-words="POLY.,SIMPLE.,DEVS." data-delay="100" data-deleteDelay="1000"></span><span class="cursor" data-owner="main"></span>
+                </h1>
                 <h2>AN INDIE <span>GAME STUDIO</span> BY STUDENTS</h2>
             </div>
         </div>
@@ -52,5 +63,8 @@
         </div>
         <p id="copyright">Poly Studios &copy; 2021-2023</p>
     </footer>
+
+    <script src="js/scroll.js"></script>
+    <script async src="js/typewriter.js"></script>
 </body>
 </html>

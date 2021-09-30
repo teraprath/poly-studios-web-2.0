@@ -36,6 +36,8 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: all 120ms;
+  transition: all 120ms;
 }
 
 header .logo {
@@ -71,6 +73,10 @@ header nav ul a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+}
+
+.sticky-header {
+  background-color: #131313;
 }
 
 #home .home-container {
@@ -113,11 +119,6 @@ header nav ul a {
   font-weight: 700;
 }
 
-#home .home-container #typewriter {
-  color: #bf1e61;
-  font-weight: 700;
-}
-
 #home .home-container #typer {
   color: #ffffff;
   font-weight: 400;
@@ -136,6 +137,7 @@ header nav ul a {
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
+  padding-top: 100px;
 }
 
 #team h4 {
