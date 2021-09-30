@@ -1,0 +1,18 @@
+$color-primary: #bf1e61;
+$color-dark-grey: #131313;
+$color-neutral-grey: #161616;
+$color-light-grey: #1a1a1a;
+
+$font-size-title-1: 48px;
+$font-size-title-2: 24px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+body {
+    background-color: $color-neutral-grey;
+    font-family: 'Poppins', sans-serif;
+}
