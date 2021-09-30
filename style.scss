@@ -133,22 +133,83 @@ header {
     }
 }
 
+h3 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    color: $color-font-1;
+    padding-top: 100px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: $font-weight-regular;
+    color: $color-font-2;
+    padding-bottom: 100px;
+}
+
 #team {
     background-color: $color-light-grey;
 
-    h3 {
-        text-align: center;
-        font-size: 48px;
-        font-weight: $font-weight-bold;
-        color: $color-font-1;
-        padding-top: 100px;
-    }
+    .card-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
 
-    h4 {
-        text-align: center;
-        font-size: 24px;
-        font-weight: $font-weight-regular;
-        color: $color-font-2;
+        .card {
+            height: 400px;
+            width: 350px;
+            background-color: $color-neutral-grey;
+
+            .content-container {
+            
+                height: 100%;
+                width: 100%;
+                padding: 28px;
+
+                img {
+                    border-radius: 100%;
+                    width: 180px;
+                    display: block;
+                    margin: 0 auto 0 auto;
+                }
+
+                h5 {
+                    font-size: 28px;
+                    font-weight: $font-weight-semi-bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $color-font-1;
+                    padding-top: 14px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: $font-weight-regular;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $color-font-3;
+                }
+
+                .socialmedia {
+                    font-size: 28px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 36px;
+
+                    i {
+                        margin: 0 8px;
+                        color: #bf1e61;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: all 200ms;
+                    }
+                }
+            }
+        }
     }
 }
 
