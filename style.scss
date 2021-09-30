@@ -8,9 +8,6 @@ $color-font-2: #CCCCCC;
 $color-font-3: #919191;
 $color-font-4: #808080;
 
-$font-size-title-1: 48px;
-$font-size-title-2: 24px;
-
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -49,10 +46,15 @@ header {
 
     .logo {
         font-size: 28px;
+        transition: all 200ms;
 
         a {
             text-decoration: none;
             color: $color-font-1;
+        }
+
+        &:hover {
+            opacity: 0.8;
         }
 
     }
@@ -65,13 +67,24 @@ header {
 
             li {
                 float: left;
-                padding: 8px 24px 0 0;
+                padding: 12px 24px 0 0;
+
+                transition: all 200ms;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
 
             div {
                     background-color: $color-primary;
-                    padding: 8px 14px;
+                    padding: 12px 24px;
                     float: right;
+                    transition: all 120ms;
+
+                    &:hover {
+                        background-color: $color-dark-primary;
+                    }
                 }
             
             a {
@@ -174,6 +187,12 @@ h4 {
                     width: 180px;
                     display: block;
                     margin: 0 auto 0 auto;
+
+                    transition: all 200ms;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
 
                 h5 {
@@ -206,6 +225,90 @@ h4 {
                         cursor: pointer;
                         user-select: none;
                         transition: all 200ms;
+
+                        &:hover {
+                            color: $color-dark-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#games {
+
+    .game-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .game-card {
+            background-color: $color-light-grey;
+            display: flex;
+            width: 100%;
+            margin: 0 100px;
+
+            .content-container {
+                height: 100%;
+                width: 100%;
+                padding: 28px;
+
+                .image {
+                    float: left;
+                    padding-right: 28px;
+
+                    img {
+                        width: 480px;
+                    }
+                }
+
+                .description {
+                    height: 100%;
+
+                    .text-container {
+                        h5 {
+                            font-size: 28px;
+                            font-weight: $font-weight-semi-bold;
+                            text-transform: uppercase;
+                            color: $color-font-1;
+                        }
+                    
+                        h6 {
+                            font-size: 16px;
+                            font-weight: $font-weight-regular;
+                            text-transform: uppercase;
+                            color: $color-font-3;
+                            padding-bottom: 24px;
+                        }
+                
+                        p {
+                            font-size: 16px;
+                            color: $color-font-1;
+                            text-align: justify;
+                        }
+                    }
+                    
+                    .button-container {
+
+                        padding-top: 12px;
+
+                        button {
+                            padding: 12px 48px;
+                            border: none;
+                            font-size: 16px;
+                            font-weight: $font-weight-medium;
+                            background-color: $color-primary;
+                            color: $color-font-1;
+
+                            transition: all 100ms;
+
+                            &:hover {
+                                background-color: $color-dark-primary;
+                                color: $color-font-2;
+                            }
+                        }
                     }
                 }
             }

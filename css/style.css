@@ -42,11 +42,17 @@ header {
 
 header .logo {
   font-size: 28px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 header .logo a {
   text-decoration: none;
   color: #ffffff;
+}
+
+header .logo:hover {
+  opacity: 0.8;
 }
 
 header nav {
@@ -59,13 +65,25 @@ header nav ul {
 
 header nav ul li {
   float: left;
-  padding: 8px 24px 0 0;
+  padding: 12px 24px 0 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+header nav ul li:hover {
+  opacity: 0.8;
 }
 
 header nav ul div {
   background-color: #bf1e61;
-  padding: 8px 14px;
+  padding: 12px 24px;
   float: right;
+  -webkit-transition: all 120ms;
+  transition: all 120ms;
+}
+
+header nav ul div:hover {
+  background-color: #992153;
 }
 
 header nav ul a {
@@ -176,6 +194,13 @@ h4 {
   width: 180px;
   display: block;
   margin: 0 auto 0 auto;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+#team .card-container .card .content-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #team .card-container .card .content-container h5 {
@@ -217,6 +242,92 @@ h4 {
           user-select: none;
   -webkit-transition: all 200ms;
   transition: all 200ms;
+}
+
+#team .card-container .card .content-container .socialmedia i:hover {
+  color: #992153;
+}
+
+#games .game-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#games .game-container .game-card {
+  background-color: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 100px;
+}
+
+#games .game-container .game-card .content-container {
+  height: 100%;
+  width: 100%;
+  padding: 28px;
+}
+
+#games .game-container .game-card .content-container .image {
+  float: left;
+  padding-right: 28px;
+}
+
+#games .game-container .game-card .content-container .image img {
+  width: 480px;
+}
+
+#games .game-container .game-card .content-container .description {
+  height: 100%;
+}
+
+#games .game-container .game-card .content-container .description .text-container h5 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#games .game-container .game-card .content-container .description .text-container h6 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #919191;
+  padding-bottom: 24px;
+}
+
+#games .game-container .game-card .content-container .description .text-container p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+#games .game-container .game-card .content-container .description .button-container {
+  padding-top: 12px;
+}
+
+#games .game-container .game-card .content-container .description .button-container button {
+  padding: 12px 48px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #bf1e61;
+  color: #ffffff;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+#games .game-container .game-card .content-container .description .button-container button:hover {
+  background-color: #992153;
+  color: #CCCCCC;
 }
 
 footer {
