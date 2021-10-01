@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Poly Studios is a small indie game studio founded by students who have always dreamed of making their own game. Games like Envolic came from this studio and more projects are being realized based on community requests.">
-
-    <title>Poly Studios - Devlog</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#bf1e61">
-    <meta name="msapplication-TileColor" content="#1a1a1a">
-    <meta name="theme-color" content="#1a1a1a">
-
-    <link rel="stylesheet" href="css/min/style.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a0a804109e.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Poly Studios is a small indie game studio founded by students who have always dreamed of making their own game. Games like Envolic came from this studio and more projects are being realized based on community requests.">
+    
+        <title>Poly Studios - Devlog</title>
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#bf1e61">
+        <meta name="msapplication-TileColor" content="#1a1a1a">
+        <meta name="theme-color" content="#1a1a1a">
+    
+        <link rel="stylesheet" href="css/min/style.min.css">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a0a804109e.js" crossorigin="anonymous"></script>
+    </head>
 <body>
+    <div class="loader"><div class="lds"><div></div><div></div><div></div></div></div>
+
     <header id="header">
         <p class="logo"><a href="#"><b>POLY</b>STUDIOS</a></p>
         <nav>
@@ -38,9 +43,12 @@
         </nav>
     </header>
 
-    <section class="devlog">
+    <section id="devlog">
         <h3>DEVLOG</h3>
         <h4>News and Updates</h4>
+        <div class="feed">
+            <div><blockquote class="twitter-tweet" data-lang="en" data-theme="light"><p lang="en" dir="ltr">We are POLY!<br>An Indie Game Studio by Students.<br><br>I hope we can convince you with upcoming projects.<a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/indiegames?src=hash&amp;ref_src=twsrc%5Etfw">#indiegames</a> <a href="https://twitter.com/hashtag/polystudios?src=hash&amp;ref_src=twsrc%5Etfw">#polystudios</a> <a href="https://t.co/MAk4yfvmtO">pic.twitter.com/MAk4yfvmtO</a></p>&mdash; Poly Studios (@PolyStudiosCOM) <a href="https://twitter.com/PolyStudiosCOM/status/1443937216791777285?ref_src=twsrc%5Etfw">October 1, 2021</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        </div>
     </section>
     
     <footer>
@@ -53,5 +61,9 @@
     </footer>
 
     <script src="js/scroll.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

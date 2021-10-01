@@ -308,6 +308,19 @@ h4 {
   background-color: #992153;
 }
 
+#devlog .feed {
+  width: 100%;
+}
+
+#devlog .feed div {
+  display: block;
+  margin: 0 auto 28px auto;
+}
+
+#devlog .feed:last-child {
+  padding-bottom: 28px;
+}
+
 footer {
   background-color: #131313;
   padding: 24px 0;

@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="css/min/style.min.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/alert.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,7 @@
 </head>
 <body>
     <div class="loader"><div class="lds"><div></div><div></div><div></div></div></div>
+    <div id="alert"><div id="alert-container"><p>Copied to clipboard!</p></div></div>
 
     <header id="header">
         <p class="logo"><a href="#"><b>POLY</b>STUDIOS</a></p>
@@ -67,7 +69,7 @@
                     <div class="socialmedia">
                         <a href="https://github.com/wrxngdev" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.instagram.com/n1.ko_n/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a onclick="copyToClipboard('iamwrxng#5271');"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -79,7 +81,7 @@
                     <div class="socialmedia">
                         <a href="https://github.com/teraprath/" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://instagram.com/igotdemxns/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a onclick="copyToClipboard('igotdemxns#0666');"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -91,7 +93,7 @@
                     <div class="socialmedia">
                         <a href="https://github.com/Hexika" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://instagram.com/h3xika/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a onclick="copyToClipboard('Hexika#6860');"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -122,6 +124,7 @@
 
     <script src="js/scroll.js"></script>
     <script src="js/loader.js"></script>
+    <script src="js/clipboard.js"></script>
     <script async src="js/typewriter.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -284,6 +284,22 @@ h4 {
     }
 }
 
+#devlog {
+
+    .feed {
+        width: 100%;
+
+        div {
+            display: block;
+            margin: 0 auto 28px auto;
+        }
+
+        &:last-child {
+            padding-bottom: 28px;
+        }
+    }
+}
+
 footer {
     background-color: $color-dark-grey;
     padding: 24px 0;
