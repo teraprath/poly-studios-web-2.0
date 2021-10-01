@@ -17,14 +17,19 @@
     <meta name="theme-color" content="#1a1a1a">
 
     <link rel="stylesheet" href="css/min/style.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a0a804109e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="loader"><div class="lds"><div></div><div></div><div></div></div></div>
+
     <header id="header">
         <p class="logo"><a href="#"><b>POLY</b>STUDIOS</a></p>
         <nav>
@@ -51,10 +56,10 @@
     </section>
 
     <section id="team">
-        <h3>TEAM</h3>
-        <h4>The minds behind the source code</h4>
+        <h3 data-aos="fade-up">TEAM</h3>
+        <h4 data-aos="fade-up">The minds behind the source code</h4>
         <div class="card-container">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <div class="content-container">
                     <img src="assets/img/avatar/WRXNGDEV.jpg" alt="Avatar">
                     <h5>WRXNGDEV</h5>
@@ -66,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <div class="content-container">
                     <img src="assets/img/avatar/HOWTOSENPAI.jpg" alt="Avatar">
                     <h5>HOWTOSENPAI</h5>
@@ -78,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <div class="content-container">
                     <img src="assets/img/avatar/HEXIKA.jpg" alt="Avatar">
                     <h5>HEXIKA</h5>
@@ -94,24 +99,14 @@
     </section>
 
     <section id="games">
-        <h3>GAMES</h3>
-        <h4>An overview of our projects</h4>
+        <h3 data-aos="fade-up">GAMES</h3>
+        <h4 data-aos="fade-up">An overview of our projects</h4>
         <div class="game-container">
-            <div class="game-card">
-                <div class="content-container">
-                    <div class="image"><img src="assets/img/Envolic.jpg" alt="thumbnail"></div>
-                    <div class="description">
-                        <div class="text-container">
-                            <h5>ENVOLIC</h5>
-                            <h6>SURVIVAL</h6>
-                            <p>You wake up on a desert island with no memories. But you quickly realize that this unknown place is not a peaceful one. You have to fight not only against monsters, but also against nature. Quickly collect resources and forge weapons and tools to protect yourself. But you can't stay here forever. What you are doing? Build a ship and return to civilization? But there is a long way ahead of you ... </p>
-                            <p></p>
-                        </div>
-                        <div class="button-container">
-                            <button>PLAY</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="image" data-aos="zoom-in">
+                <img src="assets/img/Envolic.png" alt="envolic">
+            </div>
+            <div class="button-container" data-aos="zoom-in">
+                <button>ENVOLIC</button>
             </div>
         </div>
     </section>
@@ -126,6 +121,10 @@
     </footer>
 
     <script src="js/scroll.js"></script>
+    <script src="js/loader.js"></script>
     <script async src="js/typewriter.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

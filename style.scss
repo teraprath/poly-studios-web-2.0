@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     padding: 0 100px;
     user-select: none;
-    transition: all 120ms;
+    transition: all 150ms;
 
     .logo {
         font-size: 28px;
@@ -163,7 +163,7 @@ h4 {
     font-size: 24px;
     font-weight: $font-weight-regular;
     color: $color-font-2;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 #team {
@@ -244,76 +244,40 @@ h4 {
 
     .game-container {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        .game-card {
-            background-color: $color-light-grey;
-            display: flex;
+        .image {
             width: 100%;
-            margin: 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            .content-container {
-                height: 100%;
-                width: 100%;
-                padding: 28px;
+            img {
+                width: 300px;
+                transition: all 200ms;
 
-                .image {
-                    float: left;
-                    padding-right: 28px;
-
-                    img {
-                        width: 480px;
-                    }
+                &:hover {
+                    transform: scale(0.96);
                 }
+            }
+        }
 
-                .description {
-                    height: 100%;
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12px;
 
-                    .text-container {
-                        h5 {
-                            font-size: 28px;
-                            font-weight: $font-weight-semi-bold;
-                            text-transform: uppercase;
-                            color: $color-font-1;
-                        }
-                    
-                        h6 {
-                            font-size: 16px;
-                            font-weight: $font-weight-regular;
-                            text-transform: uppercase;
-                            color: $color-font-3;
-                            padding-bottom: 24px;
-                        }
-                
-                        p {
-                            font-size: 16px;
-                            color: $color-font-1;
-                            text-align: justify;
-                        }
-                    }
-                    
-                    .button-container {
+            button {
+                padding: 12px 24px;
+                font-size: 14px;
+                font-weight: $font-weight-semi-bold;
+                border: none;
+                background-color: $color-primary;
+                color: $color-font-1;
+                transition: all 120ms;
 
-                        padding-top: 12px;
-
-                        button {
-                            padding: 12px 48px;
-                            border: none;
-                            font-size: 16px;
-                            font-weight: $font-weight-medium;
-                            background-color: $color-primary;
-                            color: $color-font-1;
-
-                            transition: all 100ms;
-
-                            &:hover {
-                                background-color: $color-dark-primary;
-                                color: $color-font-2;
-                            }
-                        }
-                    }
+                &:hover {
+                    background-color: $color-dark-primary;
                 }
             }
         }
