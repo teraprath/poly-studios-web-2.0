@@ -321,3 +321,139 @@ footer {
         color: $color-font-4;
     }
 }
+
+
+@media (max-width: 1280px) {
+
+    #team {
+        .card-container {
+            .card {
+                height: 400px;
+                width: 300px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1140px) {
+
+    #home {
+        .home-container {
+
+            .logo {
+                width: 300px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    #team {
+        .card-container {
+            .card {
+                height: 400px;
+                width: 280px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1080px) {
+
+    #team {
+        padding-bottom: 28px;
+
+        .card-container {
+            display: block;
+            padding: 0;
+
+            .card {
+                display: block;
+                margin: 0 auto 28px auto;
+                height: 400px;
+                width: 350px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    header {
+
+        justify-content: center;
+
+        nav {
+            display: none;
+        }
+    }
+
+    #home {
+        
+        .home-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                width: 360px;
+                display: none;
+            }
+
+            h1 {
+                font-size: 48px;
+                display: block;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #home {
+        .home-container {
+
+            h1 {
+                font-size: 36px;
+            }
+    
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    #team {
+        .card-container {
+            .card {
+                height: 400px;
+                width: 300px;
+            }
+        }
+    }    
+
+}
