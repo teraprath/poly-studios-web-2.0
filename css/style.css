@@ -7,7 +7,7 @@
 }
 
 body, html {
-  background-color: #161616;
+  background-color: #241A1F;
   scroll-behavior: smooth;
 }
 
@@ -98,7 +98,7 @@ header nav ul .active {
 }
 
 .sticky-header {
-  background-color: #131313;
+  background-color: #1E161A;
 }
 
 #home .home-container {
@@ -167,7 +167,7 @@ h4 {
 }
 
 #team {
-  background-color: #1a1a1a;
+  background-color: #271d22;
 }
 
 #team .card-container {
@@ -184,7 +184,7 @@ h4 {
 #team .card-container .card {
   height: 400px;
   width: 350px;
-  background-color: #161616;
+  background-color: #241A1F;
 }
 
 #team .card-container .card .content-container {
@@ -322,7 +322,7 @@ h4 {
 }
 
 footer {
-  background-color: #131313;
+  background-color: #1E161A;
   padding: 24px 0;
   text-align: center;
 }
