@@ -1,2 +1,3 @@
-# poly-studios-web-2.0
- Poly Studios Website
+# Poly Studios (2.0)
+
+The official source code of https://poly-studios.com/
